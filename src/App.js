@@ -1,9 +1,9 @@
-
+import FetchImages from "./components/FetchImages";
 
 function App() {
   return (
     <div>
-      Hi
+      <FetchImages />
     </div>
   );
 }
