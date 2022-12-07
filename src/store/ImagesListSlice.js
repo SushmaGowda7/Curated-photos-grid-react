@@ -32,7 +32,7 @@ export function GetImageList(page){
     return async function getImagesForCardsThunk(dispatch){
         const params = { page:page, results:30}
         const res = await axios.get(
-            'https://api.unsplash.com/photos/random?client_id=KoFPQF-WKwwxEVgYOK9teoRrE4b7--AgVLA4H5sba5k', 
+            'https://api.unsplash.com/photos/random?client_id=KoFPQF-WKwwxEVgYOK9teoRrE4b7--AgVLA4H5sba5k&count=30', 
             {params:params});
         if(res){
             dispatch({type:'GetImageList',payload:res.data})

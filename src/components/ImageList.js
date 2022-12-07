@@ -46,7 +46,6 @@ const ImageList = () =>{
                 
                 )
 
-
     return (
         <div>{imageDetails}</div>
     )
